@@ -1,0 +1,16 @@
+{
+  // 共通設定
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+
+  // Python固有の設定
+  "flake8.enabled": true,
+  "flake8.args": ["--config", "./python-test/.flake8"], // Todo: Flake8の設定ファイルを指定
+  "black-formatter.args": ["--config", "./python-test/pyproject.toml"], // Todo: Blackの設定ファイルを指定
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+
+  // TypeScript & React固有の設定
+  "[typescript]": {}
+}
